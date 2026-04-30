@@ -6,14 +6,16 @@ import ExpenseChart from './components/ExpenseChart';
 
 import styles from "./App.module.css";
 import "./global.css";
-const title = import.meta.env.VITE_APP_TITLE || "Expense Tracker"
+
+const title = import.meta.env.VITE_APP_TITLE || "Expense Tracker";
+
 export default function App() {
   return (
     <ExpenseProvider>
       <div className={styles.appWrapper}>
         
         <header className={styles.appHeader}>
-          <h1>Expense Tracker</h1>
+          <h1>{title}</h1>
         </header>
 
         <div className={styles.appLayout}>
