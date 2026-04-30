@@ -1,0 +1,90 @@
+/* VARIABLES */
+:root {
+  --primary: #6366f1;
+  --secondary: #a855f7;
+  --bg: #f3f4f6;
+  --white: #ffffff;
+  --danger: #f43f5e;
+  --success: #10b981;
+  --text-dark: #1f2937;
+  --text-light: #6b7280;
+  --border: #e5e7eb;
+}
+
+/* RESET */
+body {
+  margin: 0;
+  font-family: sans-serif;
+  background: var(--bg);
+}
+
+/* CARD */
+.card {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 1.25rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+  border: 1px solid var(--border);
+  margin-bottom: 1.5rem;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+/* INPUT */
+.input-field, .select-field {
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  border: 1px solid var(--border);
+  width: 100%;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* BUTTON */
+.btn-primary {
+  background: var(--primary);
+  color: white;
+  padding: 0.7rem;
+  border-radius: 0.6rem;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-outline {
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  padding: 0.6rem;
+  border-radius: 0.6rem;
+}
+
+/* LIST */
+.expense-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.7rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+.exp-name { font-weight: 600; }
+.exp-meta { font-size: 0.8rem; color: var(--text-light); }
+
+/* CHIP */
+.chip {
+  padding: 0.3rem 1rem;
+  border-radius: 999px;
+  background: #eee;
+  font-size: 0.8rem;
+}
+
+.chip.active {
+  background: var(--primary);
+  color: white;
+}
